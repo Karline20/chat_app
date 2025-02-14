@@ -1,4 +1,4 @@
-import 'package:chat_app/screens/login.dart';
+import 'package:chat_app/screens/auth.dart';
 import 'package:chat_app/util/theme/theme.dart';
 import 'package:flutter/material.dart';
 
@@ -13,8 +13,9 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
-      theme: theme,
-      home: LoginScreen(),
+      theme: lightTheme,
+      darkTheme: darkTheme,
+      home: AuthScreen(),
     );
   }
 }
